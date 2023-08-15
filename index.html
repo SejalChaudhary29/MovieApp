@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie App-input Search</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3aa1fb8a53.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Logo starts  -->
+    <nav>
+      <h1>Movie List</h1>
+    </nav>
+    <!-- Logo ends  -->
+
+    <!-- search container starts -->
+    <header class="input-search-container">
+      <div class="input-search">
+        <input
+          class="input"
+          id="input-box"
+          type="text"
+          placeholder="type here"
+        />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="search-list" id="search-list">
+        <div class="search-list-item">
+          <div class="search-item-thumbnail">
+            <img src="./download.jpeg" alt="" />
+          </div>
+          <div class="search-item-info">
+            <h3>Marvels</h3>
+            <p>2017</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- search container ends -->
+    <!-- result container -->
+    <section id="movie-container">
+      <div class="result-container">
+        <div class="result-grid" id="result-grid">
+          <div class="movie-poster">
+            <img src="/download.jpeg" alt="movie-poster" />
+          </div>
+          <div class="movie-info">
+            <h3 class="movie-title">Marvels</h3>
+            <ul class="movie-misc-info">
+              <li class="year">Year: 2017</li>
+              <li class="rated">Ratings: pg-13</li>
+              <li class="released">Released:05 May 2017</li>
+            </ul>
+            <p class="genre"><b>Genre:</b> Action, Adventure, Comedy</p>
+            <p class="write">
+              <b>write:</b> James Gunn, Don abnett, Andy Lanning
+            </p>
+            <p class="actors">
+              <b>Actors:</b>Chris Pratt, Zoe Saldana, Dave Bautista
+            </p>
+            <p class="plot">
+              <b>Plot:</b> The Guardians struggle to keep together as a team
+              while dealing with their personal family issues, notably
+              Star-Lord's ecounter with his father the ambitious celestial being
+              Ego.
+            </p>
+            <p class="language"><b>Language:</b> English</p>
+            <p class="awards">
+              <b><i class="fas fa-award"></i></b> Nominated for 1 Oscar
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- result container ends  -->
+    <footer>content</footer>
+    <script src="script.js"></script>
+  </body>
 </html>
